@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+      font-family: Arial;
+      background-image: url(marek-piwnicki-IEi7lWx7XiA-unsplash.jpg);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+    .navbar {
+      background-color: white;
+      overflow: hidden;
+      color: red;
+    }
+
+    .navbar-logo {
+      float: left;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+    }
+    .navbar-logo img {
+      width: 50px;
+      height: auto;
+      margin-right: 10px;
+    }
+    .navbar-logo span {
+      color: black;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    .navbar-space {
+      flex-grow: 1;
+    }
+    .navbar-links {
+      float: right;
+    }
+    .navbar-links div {
+      float: left;
+      padding: 15px;
+    }
+    .navbar-links div a:hover{
+      background-color: red;
+      color: white;
+    }
+
+    
+    .form-container {
+      width: 600px;
+      margin: auto;
+      margin-top: 200px;
+      border-width: 2px;
+      color: black;
+      background-color: white;
+    }
+    .form-row {
+      margin-bottom: 15px;
+      display: flex;
+      align-items: center;
+    }
+    .form-label {
+      flex: 1;
+      font-weight: bold;
+      margin-right: 10px;
+    }
+
+    .form-input {
+      flex: 2;
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .form-button {
+      flex: 1;
+      padding: 10px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+    .help
+    {
+      text-align: right;
+    }
+   .foot 
+   {
+    background-color: red;
+    color: white;
+    text-align: center;
+    margin-top: 210px;
+   }
+   .navlink
+   {
+        text-decoration: none;
+        color: black;
+   }
+    
+    .sub
+    {
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+<div class="navbar">
+  <div class="navbar-logo">
+    <img src="marek-piwnicki-IEi7lWx7XiA-unsplash.jpg" alt="Logo">
+    <span>Level</span>
+  </div>
+
+  <div class="navbar-space"></div>
+
+  <div class="navbar-links">
+    <div><a href="" class="navlink">Home</a></div>
+    <div><a href="" class="navlink">Portfolio</a></div>
+    <div><a href="" class="navlink">Blog Entries</a></div>
+    <div><a href="" class="navlink">Contact Us</a></div>
+  </div>
+</div>
+
+<br><br><br><br>
+<div class="form-container">
+<div class="form-row">
+  <label class="form-label" for="location">Location:</label>
+  <input class="form-input" type="text" id="location" name="location" placeholder="Type your destination...">
+
+  <label class="form-label" for="check-in">Check-in Date:</label>
+  <input class="form-input" type="date" id="check-in" name="check-in" placeholder="Check In">
+
+  <label class="form-label" for="check-out">Check-out Date:</label>
+  <input class="form-input" type="date" id="check-out" name="check-out" placeholder="Check out">
+</div>
+
+<div class="form-row">
+  <select class="form-input" id="room-type" name="room-type">
+    <option value="dis" >Adults</option>
+    <option value="adult1">1</option>
+    <option value="adult2">2</option>
+    <option value="adult3">3</option>
+  </select>
+
+  <select class="form-input" id="room-type" name="room-type">
+    <option value="disa" >Children</option>
+    <option value="child1">1</option>
+    <option value="chil2">2</option>
+    <option value="child3">3</option>
+  </select>
+
+  <label class="form-label" for="room-type">Room Type:</label>
+  <select class="form-input" id="room-type" name="room-type">
+    <option value="single">Single</option>
+    <option value="double">Double</option>
+    <option value="suite">Suite</option>
+  </select>
+
+  <button class="form-button" type="submit">Check avaliability</button>
+  
+</div>
+<div class="help">
+  <a href="google.com" >Need Help?</a>
+</div>
+</div>
+<div class="foot">
+<h1>We are here to help you?</h1>
+<h5>Subscribe to get our newsletters</h5>
+<div><a href="google.com" class="sub">Subsribe</a></div>
+</div>
+</body>
+</html>
+
